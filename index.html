@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>About Syberia</title>
+        <meta charset="utf-8">
+        
+<style>   
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 10px;
+    height: 100vh;
+    border: 1px solid red;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.city{
+    display: grid;
+    grid-template-areas: 
+    'foto name'
+    'foto about'
+    'foto about';
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 15% repeat(2, 1fr);
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 5px;
+    column-gap: 10px;
+    row-gap: 5px;
+}
+.foto, .name, .about{
+    border: 1px solid black;   
+}
+.foto{
+    grid-area: foto;
+    border-radius: 5%;
+
+}    
+.name{
+    grid-area: name;
+    font-size: 2em;
+    text-align: center;
+
+}
+.about{
+    grid-area: about;
+
+}
+img{
+    width: 400px;
+}
+
+</style>
+    </head>
+    <body>
+
+         <div class="main">
+             <div class="city valadilene">
+                <a href="Valadilène.html"><img src="Image/Valadilene.jpg" alt="Valadilene" class="foto vl"></a>
+                <div class="name vl">Валадилена</div>
+                <div class="about vl">Одна из юридических фирм Нью-Йорка возложила на девушку по имени Кейт Уолкер обязанность совершить сделку по продаже старой фабрики заводных игрушек, затерявшейся далеко в Швейцарских Альпах. Однако приехав в город Валадилена Кейт столкнулась с таинственными событиями, происходящими вокруг фабрики.</div>
+            </div>
+             <div class="city aralbad">
+                <a href="Aralbad.html"><img src="Image/Aralbad.jpg" alt="Aralbad" class="foto ar"></a>
+                <div class="name ar">Аральбад</div>
+                <div class="about ar"></div>
+             </div>
+             <div class="city komkolzgrad">
+                <a href="Komkolzgrad.html"><img src="Image/Komkolzgrad.jpg" alt="Komkolzgrad" class="foto kg"></a>
+                <div class="name kg">Комсомольск</div>
+                <div class="about kg"></div>
+             </div>
+             <div class="city barrockstadt">
+                <a href="Barrockstadt.html"><img src="Image/Barrockstadt.jpg" alt="Barrockstadt" class="foto br"></a>
+                <div class="name br">Баррокштадт</div>
+                <div class="about br"></div>
+             </div>
+         </div>     
+    </body>
+</html>
