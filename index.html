@@ -6,15 +6,16 @@
         
 <style>   
 
+
 .main{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 60vw;
     grid-template-rows: repeat(3,1fr);
     gap: 10px;
     height: 100vh;
-    border: 1px solid red;
     padding: 10px;
-    box-sizing: border-box;
+    background: url(Image/58fd11ba9975389318468890070e742e\ \(2\).png) right  no-repeat;
+
 }
 .city{
     display: grid;
@@ -24,14 +25,13 @@
     'foto about';
     grid-template-columns: 400px 1fr;
     grid-template-rows: 15% repeat(2, 1fr);
-    border: 1px solid black;
+    border: 5px double black;
+    border-radius: 3%;
     box-sizing: border-box;
     padding: 5px;
     column-gap: 10px;
     row-gap: 5px;
-}
-.foto, .name, .about{
-    border: 1px solid black;   
+    height: 47vh;
 }
 .foto{
     grid-area: foto;
@@ -46,6 +46,7 @@
 }
 .about{
     grid-area: about;
+    text-align: justify;
 
 }
 img{
@@ -55,6 +56,7 @@ img{
 </style>
     </head>
     <body>
+        <h1>Загадочный мир Бенуа Сокаля</h1>
 
          <div class="main">
              <div class="city valadilene">
