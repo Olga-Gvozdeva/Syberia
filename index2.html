@@ -6,32 +6,24 @@
         
 <style>   
 body{
-    margin: 0px;
-}
-*{
-    border: 1px solid black;
+    margin: 0;
+    background-color: beige;
 }
 .main{
     display:grid;
     grid-template-areas: 
-    'head head head head head'
-    '.    .    .    .    .'
-    'left city city city right'
-    'left city city city right'
-    'left city city city right'
-    'left city city city right';
-    grid-template-columns: 20% repeat(4, 1fr);
-    grid-template-rows: 10% 10% 20% 20% 20% 20%;
-    border: 1px solid black;
-    margin: 0;
-    height: 100vh;
-
+    'head head'
+    'left city';
+    grid-template-columns: 1.25fr 3fr;
+    grid-template-rows: 80px 1fr;
+    
 }
 .head{
     grid-area: head;
-    display: inline;
-    text-align: left;
+    display: flex;
     background-color: black;
+    justify-content: space-around;
+    align-items: center;
 
 }
 button{
@@ -39,10 +31,10 @@ button{
     height: 50px;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 10%;
-    margin: 10px;
     font-size: larger;
     color: beige;
     background-color: rgb(95, 93, 93);
+   
     
 }
 /*.city{
@@ -60,14 +52,37 @@ button{
     width: 35vw;
 }*/
 .left{
+    position: relative;
+    top: 10%;
     grid-area: left;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr repeat(4, 1fr) 2fr repeat(6);
+    margin-left: 5%;
+    height: 100vh;  
 }
-.right{
-    grid-area: right;
+.main-pers{
+    display: flex;
+    flex-flow: column nowrap;
+    border: 1px solid rgb(203, 203, 174);
+    border-radius: 5%;
+    background-color: rgb(203, 203, 174);
+    justify-content: center;
 }
+
+.main-pers div, .secondary-pers div{
+    font: 25px/20px 'Lucida Grande';
+    border: 1px solid white;
+    border-radius: 10%;
+    margin: 10px 0;
+    padding: 10px 0;
+    width: 70%;
+    
+}
+.main-pers div:first-child, .secondary-pers div:first-child{
+    border: 4px double white;
+    font: italic bold 25px 'Lucida Grande';
+    text-align: center;
+    width: 90%;
+}
+
 /*.foto{
     grid-area: foto;
     border-radius: 5%;
@@ -88,14 +103,7 @@ img{
     width: 300px;
     z-index: -1;
 }*/
-.secondary-pers{
-    height: 10%;
-    border-radius: 6%;
-    text-align: center;
-    font-size: large;
-    padding-top: 5px;
-    box-sizing: border-box;
-}
+
 
 </style>
     </head>
@@ -106,49 +114,49 @@ img{
                  <button>Sketches</button>
                  <button>Videos</button>
                  <button>Syberia 2</button>
-                 <button">Syberia 3</button>
-                 <button">Syberia 4</button>
+                 <button>Syberia 3</button>
+                 <button>Syberia 4</button>
              </div>
              <div class="left">
                  <div class="main-pers">
-                    <div class="main">Main person of Syberia</div>
+                    <div>Main person of Syberia</div>
                     <div>Kate Walker</div>
                     <div>Oscar</div>
                     <div>Anna Voralberg</div>
                     <div>Hans Voralberg</div>
                  </div>
-                 <div>
-                     <div class="secondary-pers">Secondary Person in Syberia</div>
-                     <div class="secondary-vl">Person in Valadilene</div>
-                     <div class="secondary-br">Person in Barrockstadt</div>
-                     <div class="secondary-kg">Person in Komkolzgrad</div>
-                     <div class="secondary-ar">Person in Aralbad</div>
-                     <div class="secondary-spice">Person in Space station</div>
-                     <div class="secondary-ny">Person in New York</div>
+                 <div class="secondary-pers">
+                     <div>Secondary Person of Syberia</div>
+                     <div>Person in Valadilene</div>
+                     <div>Person in Barrockstadt</div>
+                     <div>Person in Komkolzgrad</div>
+                     <div>Person in Aralbad</div>
+                     <div>Person in Space station</div>
+                     <div >Person in New York</div>
                  </div>
              </div>
-             <!--
-             <div class="city valadilene">
+                <!-- <div class="city">
+             <div class="valadilene">
                 <a href="Valadilène.html"><img src="Image/Valadilene.jpg" alt="Valadilene" class="foto vl"></a>
                 <div class="name vl">Валадилена</div>
                 <div class="about vl">Одна из юридических фирм Нью-Йорка возложила на девушку по имени Кейт Уолкер обязанность совершить сделку по продаже старой фабрики заводных игрушек, затерявшейся далеко в Швейцарских Альпах. Однако приехав в город Валадилена Кейт столкнулась с таинственными событиями, происходящими вокруг фабрики.</div>
             </div>
-             <div class="city aralbad">
+             <div class="aralbad">
                 <a href="Aralbad.html"><img src="Image/Aralbad.jpg" alt="Aralbad" class="foto ar"></a>
                 <div class="name ar">Аральбад</div>
                 <div class="about ar"></div>
              </div>
-             <div class="city komkolzgrad">
+             <div class="komkolzgrad">
                 <a href="Komkolzgrad.html"><img src="Image/Komkolzgrad.jpg" alt="Komkolzgrad" class="foto kg"></a>
                 <div class="name kg">Комсомольск</div>
                 <div class="about kg"></div>
              </div>
-             <div class="city barrockstadt">
+             <div class="barrockstadt">
                 <a href="Barrockstadt.html"><img src="Image/Barrockstadt.jpg" alt="Barrockstadt" class="foto br"></a>
                 <div class="name br">Баррокштадт</div>
                 <div class="about br"></div>
              </div> -->
-             <div class="right"></div>
+                </div> 
          </div>     
     </body>
 </html>
