@@ -1,5 +1,8 @@
 body{
     margin: 0;
+    background-image: url(Image/medium.png);
+    background-repeat: no-repeat;
+    background-position: 6% 80%;
 }
 
 header{
@@ -84,4 +87,7 @@ figcaption{
 .img-city{
     width: 25vw;
 }   
-
+a{
+    text-decoration: none;
+    color: black;
+}
