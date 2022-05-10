@@ -52,11 +52,9 @@ button{
     width: 35vw;
 }*/
 .left{
-    position: relative;
-    top: 10%;
     grid-area: left;
-    margin-left: 5%;
     height: 100vh;  
+    border: 1px solid var(--black07);
 }
 .main-pers{
     display: flex;
@@ -160,3 +158,159 @@ img{
          </div>     
     </body>
 </html>
+
+<!--
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>About Syberia</title>
+        <meta charset="utf-8">
+        
+<style>   
+body{
+    margin: 0px;
+}
+*{
+    border: 1px solid black;
+}
+.main{
+    display:grid;
+    grid-template-areas: 
+    'head head head head head'
+    '.    .    .    .    .'
+    'left city city city right'
+    'left city city city right'
+    'left city city city right'
+    'left city city city right';
+    grid-template-columns: 20% repeat(4, 1fr);
+    grid-template-rows: 10% 10% 20% 20% 20% 20%;
+    border: 1px solid black;
+    margin: 0;
+    height: 100vh;
+
+}
+.head{
+    grid-area: head;
+    display: inline;
+    text-align: left;
+    background-color: black;
+
+}
+button{
+    width: 160px;
+    height: 50px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10%;
+    margin: 10px;
+    font-size: larger;
+    color: beige;
+    background-color: rgb(95, 93, 93);
+    
+}
+/*.city{
+    grid-area: city;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 15% repeat(2, 1fr);
+    border: 5px double black;
+    border-radius: 3%;
+    box-sizing: border-box;
+    padding: 5px;
+    column-gap: 10px;
+    row-gap: 5px;
+    height: 35vh;
+    width: 35vw;
+}*/
+.left{
+    grid-area: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr repeat(4, 1fr) 2fr repeat(6);
+}
+.right{
+    grid-area: right;
+}
+/*.foto{
+    grid-area: foto;
+    border-radius: 5%;
+
+}    
+.name{
+    grid-area: name;
+    font-size: 2em;
+    text-align: center;
+
+}
+.about{
+    grid-area: about;
+    text-align: justify;
+
+}
+img{
+    width: 300px;
+    z-index: -1;
+}*/
+.secondary-pers{
+    height: 10%;
+    border-radius: 6%;
+    text-align: center;
+    font-size: large;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+</style>
+    </head>
+    <body>
+         <div class="main">
+             <div class="head">
+                 <button>Benua Sokal</button>
+                 <button>Sketches</button>
+                 <button>Videos</button>
+                 <button>Syberia 2</button>
+                 <button">Syberia 3</button>
+                 <button">Syberia 4</button>
+             </div>
+             <div class="left">
+                 <div class="main-pers">
+                    <div class="main">Main person of Syberia</div>
+                    <div>Kate Walker</div>
+                    <div>Oscar</div>
+                    <div>Anna Voralberg</div>
+                    <div>Hans Voralberg</div>
+                 </div>
+                 <div>
+                     <div class="secondary-pers">Secondary Person in Syberia</div>
+                     <div class="secondary-vl">Person in Valadilene</div>
+                     <div class="secondary-br">Person in Barrockstadt</div>
+                     <div class="secondary-kg">Person in Komkolzgrad</div>
+                     <div class="secondary-ar">Person in Aralbad</div>
+                     <div class="secondary-spice">Person in Space station</div>
+                     <div class="secondary-ny">Person in New York</div>
+                 </div>
+             </div>
+             <div class="city valadilene">
+                <a href="Valadilène.html"><img src="Image/Valadilene.jpg" alt="Valadilene" class="foto vl"></a>
+                <div class="name vl">Валадилена</div>
+                <div class="about vl">Одна из юридических фирм Нью-Йорка возложила на девушку по имени Кейт Уолкер обязанность совершить сделку по продаже старой фабрики заводных игрушек, затерявшейся далеко в Швейцарских Альпах. Однако приехав в город Валадилена Кейт столкнулась с таинственными событиями, происходящими вокруг фабрики.</div>
+            </div>
+             <div class="city aralbad">
+                <a href="Aralbad.html"><img src="Image/Aralbad.jpg" alt="Aralbad" class="foto ar"></a>
+                <div class="name ar">Аральбад</div>
+                <div class="about ar"></div>
+             </div>
+             <div class="city komkolzgrad">
+                <a href="Komkolzgrad.html"><img src="Image/Komkolzgrad.jpg" alt="Komkolzgrad" class="foto kg"></a>
+                <div class="name kg">Комсомольск</div>
+                <div class="about kg"></div>
+             </div>
+             <div class="city barrockstadt">
+                <a href="Barrockstadt.html"><img src="Image/Barrockstadt.jpg" alt="Barrockstadt" class="foto br"></a>
+                <div class="name br">Баррокштадт</div>
+                <div class="about br"></div>
+             </div> 
+             <div class="right"></div>
+         </div>     
+    </body>
+</html>    
+-->
