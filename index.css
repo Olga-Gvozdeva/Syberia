@@ -1,8 +1,5 @@
 body{
     margin: 0;
-    background-image: url(Image/medium.png);
-    background-repeat: no-repeat;
-    background-position: 6% 80%;
 }
 
 header{
@@ -43,6 +40,14 @@ display: flex;
     text-align: justify;
     font-family: sans-serif;
     flex-basis: 50%;
+}
+.main p{
+    text-indent: 5%;
+}
+h1{
+    font-family: 'Linux Libertine','Georgia','Times',serif;
+    font-weight: normal;
+    margin-top: 0;
 }
 
 .right{
@@ -90,4 +95,78 @@ figcaption{
 a{
     text-decoration: none;
     color: black;
+}
+.img-kate{
+    position: fixed;
+    left: 3%; 
+    top: 43%;
+}
+@media screen and (max-width: 479px){
+    .img-kate, .head{
+        display: none;
+    }
+    .foundation{
+        display: flex;
+        flex-flow: column;
+    }
+    .right{
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        justify-content: space-evenly;
+        padding: 2% 0 0 0;
+    }
+    .right div{
+        width: 30vw;
+        text-align: center;
+    }
+    .main{
+        padding: 5% 2%;
+        text-align: justify;
+        font-family: sans-serif;
+        flex-basis: 100%;
+    }
+    figure{
+    margin: 2%;    
+    background: #e7e7e7; 
+    padding: 2%; 
+
+    }
+    .img-city{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 767px){
+    .img-kate, .head{
+        display: none;
+    }
+    .foundation{
+        display: flex;
+        flex-flow: column;
+    }
+    .right{
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        justify-content: space-evenly;
+        padding: 2% 0 0 0;
+    }
+    .right div{
+        width: 30vw;
+        text-align: center;
+    }
+    .main{
+        padding: 5% 2%;
+        text-align: justify;
+        font-family: sans-serif;
+        flex-basis: 100%;
+    }
+    figure{
+    margin: 0 2% 1% 2%;    
+    background: #e7e7e7;  
+    width: 30vw;
+    }
+    .img-city{
+        width: 28vw;
+    }
 }
