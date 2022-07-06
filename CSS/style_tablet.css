@@ -1,0 +1,32 @@
+@media screen and (max-width: 1200px){
+    .head .dropdownMenu{
+        width: 40px;
+        display: flex;
+        background-image: url(../Image/hamburger.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }  
+    .head .dropdownMenu:hover{
+        background-image: url(../Image/hamburger.png);
+        cursor: pointer;
+    }
+
+    .right{
+        display: none;
+    }
+    .main{
+        flex-basis: 100%;
+
+    }
+
+    .foundation{
+        background-image: url(../Image/mediumtb.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 540px;
+        background-position: top 200px right 40px;
+    
+    }
+
+}
